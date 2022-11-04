@@ -1,0 +1,148 @@
+!-- Neno Feggans
+	PROG PURPOSE: This webpage is about CPU Terminology 
+ -->
+<html lang="en">
+<head>
+	<title> CPU Systems  & Terms</title>
+ </head>
+<body style="color: #000000; background-color : coral; font-family; calibri;">
+
+<table border="2" style="text-align:center;" width="560">
+	<tr style=font-weight: bold; font-size 120%;'>
+	<td>Network Classification</td>
+	<td>
+    <ul>LAN</ul>
+	<ul>MAN</ul>
+	<ul>WAN</ul>
+</td>
+		
+	<tr><td>Network Models</td>
+	<td>
+    <ul>Repeater</ul>
+	<ul>Switch</ul>
+	<ul>Router</ul>
+    <ul>Gateway</ul>
+    <ul> Bridge</ul><ul>
+</td></tr>
+	
+		
+	<tr><td>Client/ <br /> Server model</td>
+    <td>
+
+    <ul>P2P:<br /> peer-to-peer </ul>
+	<ul>Distributed system</ul>
+	<ul>Cloud computing</ul>
+</td></tr>
+
+	
+    <tr><td>Internet Addressing</td>
+    <td>
+    <ul>Tier 1</ul>
+	<ul>Tier 2</ul>
+	<ul>Tier 3</ul>
+</td></tr>	
+		
+		
+	
+	<tr>
+		<td>I </td>	
+		
+		<td></td>	
+		
+	</tr>
+	</td>
+		<td>Time-sharing </td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Multiprogramming</td>
+		<td>
+	</tr>
+	<tr>	
+		<td> Application Software</td>	
+		<td></td>	
+		
+	</tr>
+	<tr>
+		<td>System Software </td>	
+		
+		<td></td>	
+		
+	</tr>
+	<tr></td>
+		<td>Utility Software </td>
+		<td</td>
+	</tr>
+	<tr>
+		<td>Graphical User interface (GUI)</td>
+		<td>a visual way of interacting with a computer using items such as windows, icons, and menus, used by most modern operating systems</td>
+		
+	</tr>
+	<tr>	
+		<td> Shell</td>	
+		<td>a UNIX term for the interactive user interface with an operating system </td>	
+		
+	</tr>
+	<tr>
+		<td>Kernel </td>	
+		
+		<td>he core that provides basic services for all other parts of the OS </td>	
+		
+	</tr></td>
+		<td>Device manager </td>
+		<td>a Control Panel applet within Windows operating systems</td>
+	</tr>
+	<tr>
+		<td>File Manager</td>
+		<td>A file manager or file browser is a computer program that provides a user interface to manage files and folder</td>
+		
+	</tr>
+	<tr>	
+		<td> Memory Manager</td>	
+		<td>a method in the operating system to manage operations between main memory and disk during process execution.</td>	
+		
+	</tr>
+	<tr>
+		<td>Virtual Memory </td>	
+		
+		<td> a memory management technique where secondary memory can be used as if it were a part of the main memory</td>	
+		
+	</tr></td>
+		<td>Boot strapping </td>
+		<td> get (oneself or something) into or out of a situation using existing resources.</td>
+		
+	</tr>
+	<tr>
+		<td>ROM</td>
+		<td>Read-only memory, or ROM, is a type of computer storage containing non-volatile, permanent data that, normally, can only be read, not written to</td>
+		
+	</tr>
+	<tr>	
+		<td> Deadlock</td>	
+		<td>a state of inaction or neutralization resulting from the opposition of equally powerful uncompromising persons or factions </td>	
+		
+	</tr>
+	<tr>
+		<td>Spooling </td>	
+		
+		<td>send (data that is intended for printing or processing on a peripheral device) to an intermediate store. </td>	
+		
+		
+	</tr>
+	<tr>
+		<td>Multi-Factor Authentication</td>
+		<td>is an authentication method that requires the user to provide two or more verification factors to gain access to a resource such as an application, online account, or a VPN</td>
+		
+		
+	</tr>
+	<tr>
+		<td>Super User(or ADMIN) </td>	
+		
+		<td>superuser is a special user account used for system administration</td>	
+		
+
+</table>
+	
+</body>
+
+</html>
