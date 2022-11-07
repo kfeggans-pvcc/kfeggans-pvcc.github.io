@@ -37,37 +37,3 @@ def main():
     print("...MAGIC-8 BALL OUT")   
     
 main()
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    "
-dogs = ["Sadie","Molly","Ella","Milo","Buddy","Rocky", "AnnaBelle","Gonzo","Sweetie-Pie","Diego"]
-
-dogs2 = []
-
-def main():
-    how_many = len(dogs)
-    print("\nNumber of dogs in the list: " + str(how_many))
-    print("\nOriginal list of dog names:")
-    print(dogs)
