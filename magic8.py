@@ -5,7 +5,7 @@
 
 
 import random
-answers_8_ball = ( "As I see it, yes", "Ask again later",
+answers_8_ball = ( "NEVER ask me about MONEY!","As I see it, yes", "Ask again later",
     "Better not tell you now", "Cannot predict now",
     "Concentrate and ask again", "Dont count on it",
     "It is certain", "It is decidedly so",
@@ -29,8 +29,8 @@ def main():
         question = input("\nWhat is your YES or NO question? ")
         print("The MAGIC-8 BALL says: " + answer)
 
-        askAgain = input ("\nWould you like to ask me another question (Y or N)?:
-            if askAgain.upper() == "N" or askAgain== "n":
+        askAgain = input ("\nWould you like to ask me another question (Y or N)?:")
+        if askAgain.upper() == "N" or askAgain == "n":
                 another_question = False
 
     print("\nCome back again when you have another important question(or SECRETS).") 
