@@ -1,78 +1,37 @@
-# Name:Kanesha Feggans
-# Prog Purpose: This program computes college tuition & fees based on number of credits
-#   PVCC Fee Rates are from: https://www.pvcc.edu/tuition-and-fees
-#   Note: All fees are PRE credits 
-#        In-state tuition: $155, Out of state tuition: $331.60
-#       Capital fee: $23.50 (out-of-state student only)
-#        Institution fee: $1.75
-#        Activity fee: $2.90
 
-import datetime
-#define tuition & fee rates
-RATE_TUITION_IN = 155
-RATE_TUITION_OUT = 331.60
-RATE_CAPITAL = 23.5
-RATE_INSTITUTION = 1.75
-RATE_ACTIVITY = 2.90
+import random
+topics = []
+TOTAL_TOPICS = 40 #test this program with 5 topics
 
-#define global variables
-inout = 1 # 1 means in-state, 2 means out-of-state
-numcredits = 0
-scholarshipamt = 0
-tuitionfee = 0
-capitalfee = 0
-institutionfee = 0
-activityfee = 0
-totalowed = 0
-balance = 0
-
-    
 def main():
-    another_student = True
-    while another_student:
-        get_user_data()
-        perform_calculations()
-        display_results()
-        yesno = input("\nWould you like to calculate tuition and fees for another student? (Y/N): ")
-        if yesno == 'N' or yesno == 'n' or yesno == "no" or yesno =="No" :
-            another_student = False
+    num_used_topics = 0
+    for i in range(TOTAL_TOPICS): #fill the list with items with an "A" in each one
+        topics.append("A")
+    print(topics)    
 
-def get_user_data():
-        global inout, numcredits, scholarshipamt
-        inout = int(input("Hey there! Enter a 1 for IN-STATE; enter a 2 for OUT-OF-STATE: "))
-        numcredits = int(input("Number of credits registered for: "))
-        scholarshipamt = float(input("Scholarship amount received: "))
+    generate_another_randnumber = True #boolean variable to control the outer loop
+    continue_search = True #boolean to control the inner loop
 
-def perform_calculations():
-    global tuitionfee, capitalfee, institutionfee, activityfee, totalowed, balance
-    if inout == 1:
-        tuitionfee = numcredits * RATE_TUITION_IN
-        capitalfee = 0
-    else:
-        tuitionfee = numcredits * RATE_TUITION_OUT
-        capitalfee = numcredits * RATE_CAPITAL
+    while generate_another_randnumber: #OUTER LOOP
+        continue_search=True
 
-    institutionfee = numcredits * RATE_INSTITUTION
-    activityfee = numcredits * RATE_ACTIVITY
-    totalowed = tuitionfee + capitalfee + institutionfee + activityfee
-    balance = totalowed - scholarshipamt
+        while continue_search: #INNERLOOP
+            randnumber = random.randint(0, TOTAL_TOPICS-1) #items in list start with 0, not 1
+            if topics[randnumber]== "A":
+                topics[randnumber]= "U"
+                num_used_topics += 1
+                continue_search= False
+        print("\nRandom Topic Number: " + str(randnumber+1)) #items in list start with 0, so add 1
+        print("List of topic avalibility by number:")
+        for i in range (TOTAL_TOPICS):
+            print("\t"+ str(i+1) + ". " + topics[i])
+        
+        if num_used_topics == TOTAL_TOPICS:
+            print("There are no more topics avaliable at this time.")
+            return() #quite the main() function
+        else:
+            answer = input("Would you like another random number Y/N: ")
+            if answer.upper() == "n" or answer.upper() == "N":
+                generate_another_randnumber= False
 
-def display_results():
-    print('\n****************************************')
-    print('Number of credits : ' + str(numcredits))
-    print('****************************************')
-    print('Tuition         $ ' + format(tuitionfee,'10,.2f'))
-    print('Capital Fee     $ ' + format(capitalfee,'10,.2f'))
-    print('Institution Fee $ '+ format(institutionfee,'10,.2f'))
-    print('Activity Fee    $ '+ format(activityfee,'10,.2f'))
-    print('Total           $ '+ format(totalowed,'10,.2f'))
-    print('Scholarship     $ ' + format(scholarshipamt,'10,.2f'))
-    print('****************************************')
-    print('Balance Owed    $ ' + format(balance,'10,.2f'))
-    print('****************************************')
-    print(str(datetime.datetime.now()))
-    print("NOTE: PVCC Fee Rates: https://www.pvcc.edu/tuition-and-fees")
-
-
-# call on main program to execute
 main()
