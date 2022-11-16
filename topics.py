@@ -1,4 +1,8 @@
 
+
+
+
+
 import random
 topics = []
 TOTAL_TOPICS = 40 #test this program with 5 topics
