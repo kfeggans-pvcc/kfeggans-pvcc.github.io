@@ -1,4 +1,4 @@
-#Name: Gaia Willis
+#Name: Kanesha Feggans
 #Class: CSC 110
 # Opens student data from student.csv file
 
